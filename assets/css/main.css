@@ -1,3 +1,92 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn, .header .action__sign-up {
+  --height: 64px;
+  display: inline-block;
+  min-width: 157px;
+  border-radius: 8px;
+  background: #936cdd;
+  height: var(--height);
+  line-height: var(--height);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover, .header .action__sign-up:hover {
+  opacity: 0.9;
+}
+
+.header {
+  padding: 42px 0 8px;
+}
+.header-fixed {
+  position: sticky;
+  top: -34px;
+  background: #fff8f3;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .navbar__list {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+.header .navbar__link {
+  color: #665f73;
+  line-height: 1.75;
+  padding: 8px;
+}
+.header .navbar__link--active {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.header .action {
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+.header .action__login {
+  color: #201830;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.header .action__sign-up {
+  --height: 48px;
+  min-width: 116px;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  background: #201830;
+}
 
 /*# sourceMappingURL=main.css.map */

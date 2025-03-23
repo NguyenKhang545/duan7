@@ -1,0 +1,95 @@
+// Common
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 64px;
+    display: inline-block;
+    min-width: 157px;
+    border-radius: 8px;
+    background: #936cdd;
+    height: var(--height);
+    line-height: var(--height);
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // Btn hover
+    &:hover {
+        opacity: 0.9;
+    }
+}
+// Header
+.header {
+    padding: 42px 0 8px;
+    &-fixed {
+        position: sticky;
+        top: -34px;
+        background: #fff8f3;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // Navbar
+    .navbar {
+        &__list {
+            display: flex;
+            align-items: center;
+            column-gap: 48px;
+        }
+        &__link {
+            color: #665f73;
+            line-height: 1.75;
+            padding: 8px;
+        }
+        &__link--active {
+            display: flex;
+            align-items: center;
+            column-gap: 7px;
+        }
+    }
+    // Action
+    .action {
+        display: flex;
+        align-items: center;
+        column-gap: 28px;
+        &__login {
+            color: #201830;
+            text-align: right;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 1.75;
+        }
+        &__sign-up {
+            @extend .btn;
+            --height: 48px;
+            min-width: 116px;
+            font-size: 1.6rem;
+            border-radius: 6px;
+            background: #201830;
+        }
+    }
+}
