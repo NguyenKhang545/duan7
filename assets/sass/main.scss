@@ -71,7 +71,9 @@ a {
 
 .btn {
     --height: 64px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 157px;
     border-radius: 8px;
     background: #936cdd;
@@ -81,7 +83,7 @@ a {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
-    @include flexCenter;
+    text-align: center;
     // Btn hover
     &:hover {
         opacity: 0.9;
@@ -318,6 +320,79 @@ a {
                 font-weight: 600;
                 line-height: 1.67;
             }
+        }
+    }
+}
+// Podcast
+.podcast {
+    margin-top: 160px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        column-gap: 130px;
+    }
+    &-content {
+        width: 40%;
+        position: relative;
+        &__heading {
+            @include heading-two;
+            width: 470px;
+        }
+        &__decor {
+            position: absolute;
+            top: 80px;
+            left: 173px;
+            z-index: -1;
+        }
+        &__desc {
+            margin-top: 18px;
+            @include paragraph-medium;
+            width: 470px;
+        }
+        &__btn {
+            margin-top: 38px;
+            column-gap: 8px;
+        }
+    }
+    &-media {
+        height: 339px;
+        flex-grow: 1;
+        position: relative;
+        &__img-decor-01 {
+            position: absolute;
+            top: 164px;
+            left: 0;
+        }
+        &__img-decor-02 {
+            position: absolute;
+            top: 0;
+            left: 185px;
+        }
+        &__img-decor-03 {
+            position: absolute;
+            top: 59px;
+            right: 0;
+        }
+        &__img-decor-04 {
+            position: absolute;
+            top: 222px;
+            right: 48px;
+        }
+        &__img-decor-05 {
+            position: absolute;
+            top: 273px;
+            right: 275px;
+        }
+        &__circle {
+            width: 287px;
+            height: 287px;
+            opacity: 0.4;
+            background: #ff9051;
+            filter: blur(129px);
+            border-radius: 50%;
+            position: absolute;
+            right: 141px;
+            top: 56px;
         }
     }
 }

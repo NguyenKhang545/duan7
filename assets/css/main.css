@@ -24,7 +24,9 @@ a {
 
 .btn, .header .action__sign-up {
   --height: 64px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 157px;
   border-radius: 8px;
   background: #936cdd;
@@ -33,9 +35,7 @@ a {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .btn:hover, .header .action__sign-up:hover {
   opacity: 0.9;
@@ -272,6 +272,85 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
+}
+
+.podcast {
+  margin-top: 160px;
+}
+.podcast__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 130px;
+}
+.podcast-content {
+  width: 40%;
+  position: relative;
+}
+.podcast-content__heading {
+  color: #201830;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.24;
+  width: 470px;
+}
+.podcast-content__decor {
+  position: absolute;
+  top: 80px;
+  left: 173px;
+  z-index: -1;
+}
+.podcast-content__desc {
+  margin-top: 18px;
+  color: #665f73;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  width: 470px;
+}
+.podcast-content__btn {
+  margin-top: 38px;
+  column-gap: 8px;
+}
+.podcast-media {
+  height: 339px;
+  flex-grow: 1;
+  position: relative;
+}
+.podcast-media__img-decor-01 {
+  position: absolute;
+  top: 164px;
+  left: 0;
+}
+.podcast-media__img-decor-02 {
+  position: absolute;
+  top: 0;
+  left: 185px;
+}
+.podcast-media__img-decor-03 {
+  position: absolute;
+  top: 59px;
+  right: 0;
+}
+.podcast-media__img-decor-04 {
+  position: absolute;
+  top: 222px;
+  right: 48px;
+}
+.podcast-media__img-decor-05 {
+  position: absolute;
+  top: 273px;
+  right: 275px;
+}
+.podcast-media__circle {
+  width: 287px;
+  height: 287px;
+  opacity: 0.4;
+  background: #ff9051;
+  filter: blur(129px);
+  border-radius: 50%;
+  position: absolute;
+  right: 141px;
+  top: 56px;
 }
 
 /*# sourceMappingURL=main.css.map */
